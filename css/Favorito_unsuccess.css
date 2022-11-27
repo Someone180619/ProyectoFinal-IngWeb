@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    
+}
+.header{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85px;
+    padding: 5px 0;
+}
+
+/* .header .logo{
+    cursor: pointer;
+} */
+
+.header .logo .img{
+    height: 10px;
+    width: auto;
+    transition: all 0.3s;
+}
+/* .header .logo img:hover{
+    transform: scale(1.2);
+} */
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* .header .nav-links:hover{
+    transform: scale(1.1);
+} */
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: gold;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: aqua;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: wheat;
+    color: aquamarine;
+    transform: scale(1.1);
+}
+
+#principal{
+    background-image: url("../img/fifa-mundial-trofeo-recurso-728.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor{
+    position: relative;
+    width: 90;
+    max-width: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, auto);
+    padding: 50px;
+    /* llevarlo a la izquierda */
+}
+
+.contenedor > div, .contenido{
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 7px 13px 37px #da2441;
+}
+
+#head{
+    text-align: initial;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+#horizon-line{
+    width: auto;
+    height: 1px;
+    background-color: #da2441;
+}
+
+#no{
+    text-align:left;
+    font-size: 35px;
+    font-weight: bold;
+    color: #441035;
+    vertical-align: middle;
+}
+
+.contenedor .boton:hover{
+    transform: scale(1.1);
+    background-color: #31040b;
+}
+
+.boton{
+    border: #441035;
+    color: #ffffff;
+    background-color: #da2441;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
