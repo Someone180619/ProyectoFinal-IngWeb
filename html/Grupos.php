@@ -36,14 +36,14 @@
                                         
                                             echo '<thead>';
                                                 echo '<tr>';
-                                                    echo '<th><a href="'. $grupo['href'] .'" style="font-family: "Source Sans Pro", sans-serif;color: var(--bs-white);font-weight: bold;border-color: var(--bs-table-active-bg);">'. $grupo['name'] .'</a></th>';
+                                                    echo '<th><a href="../scripts/api_bd/class/read.php?action=infogrupo" style="font-family: "Source Sans Pro", sans-serif;color: var(--bs-white);font-weight: bold;border-color: var(--bs-table-active-bg);">'. $grupo['name'] .'</a></th>';
                                                 echo '</tr>';
                                             echo '</thead>';
                                             echo '<tbody>';
                                                 foreach ($grupo->equipo as $equipo) {
                                                     echo '<tr>';
                                                         echo '<td><img src="'. $equipo->bandera .'"></td>';
-                                                        echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">'. $equipo->nombre .'</td>';
+                                                        echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif; color: var(--bs-white);font-weight: bold;">'. $equipo->nombre .'</td>';
                                                     echo '</tr>';
                                                 }
                                             echo '</tbody>';

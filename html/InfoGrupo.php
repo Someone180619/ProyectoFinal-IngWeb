@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    echo json_encode($_SESSION['data']);
+    //ya llegan los datos, solo queda de pasarlos a la tabla
+    //implementar sesion ya que no se puede pasar datos por url
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en" style="background: rgba(80,11,36,0.71);">
 
@@ -47,9 +55,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><img src="../img/blob-1.png"></td>
-                                            <td class="text-center text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
+                                        <?php
+                                            $grupos = simplexml_load_file('../xml/grupos.xml');
+
+                                            foreach($grupos->grupo as $grupo){
+                                                echo '<tr>';
+                                                    echo '<td><img src="../img/blob-1.png"></td>'; 
+                                                    echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;"></td>';
+                                            }
+                                            
+                                        ?>
+                                            
+                                            
                                             <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
                                             <td style="color: var(--bs-white);"></td>
                                             <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>

@@ -18,10 +18,10 @@ Grupo H: Portugal, Ghana, Uruguay, Corea del Sur
 y sus imagenes localizadas en la carpeta img-->
 
 <grupos>
-    <grupo name="Grupo A" href="GrupoA.html">
+    <grupo name="Grupo A">
         <equipo >
-            <nombre>Qatar</nombre>
-            <bandera>..\img\banderas\Qatar.png</bandera>
+            <nombre>Catar</nombre>
+            <bandera>..\img\banderas\Catar.png</bandera>
         </equipo>
         <equipo>
             <nombre>Ecuador</nombre>
@@ -33,46 +33,46 @@ y sus imagenes localizadas en la carpeta img-->
         </equipo>
         <equipo>
             <nombre>Paises Bajos</nombre>
-            <bandera>..\img\banderas\Holanda.png</bandera>
+            <bandera>..\img\banderas\Paises Bajos.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo B" href="GrupoB.html">
+    <grupo name="Grupo B">
         <equipo>
             <nombre>Inglaterra</nombre>
             <bandera>..\img\banderas\Inglaterra.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Iran</nombre>
-            <bandera>..\img\banderas\Iran.png</bandera>
+            <nombre>Irán</nombre>
+            <bandera>..\img\banderas\Irán.png</bandera>
         </equipo>
         <equipo>
             <nombre>Estados Unidos</nombre>
-            <bandera>..\img\banderas\Usa.png</bandera>
+            <bandera>..\img\banderas\Estados Unidos.png</bandera>
         </equipo>
         <equipo>
             <nombre>Gales</nombre>
             <bandera>..\img\banderas\Gales.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo C" href="GrupoC.html">
+    <grupo name="Grupo C">
         <equipo>
             <nombre>Argentina</nombre>
             <bandera>..\img\banderas\Argentina.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Arabia Saudí</nombre>
-            <bandera>..\img\banderas\Arabia.png</bandera>
+            <nombre>Arabia Saudita</nombre>
+            <bandera>..\img\banderas\Arabia Saudita.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Mexico</nombre>
-            <bandera>..\img\banderas\Mexico.png</bandera>
+            <nombre>México</nombre>
+            <bandera>..\img\banderas\México.png</bandera>
         </equipo>
         <equipo>
             <nombre>Polonia</nombre>
             <bandera>..\img\banderas\Polonia.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo D" href="GrupoD.html">
+    <grupo name="Grupo D">
         <equipo>
             <nombre>Francia</nombre>
             <bandera>..\img\banderas\Francia.png</bandera>
@@ -86,36 +86,36 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Dinamarca.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Tunez</nombre>
-            <bandera>..\img\banderas\Tunez.png</bandera>
+            <nombre>Túnez</nombre>
+            <bandera>..\img\banderas\Túnez.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo E" href="GrupoE.html">
+    <grupo name="Grupo E">
         <equipo>
             <nombre>España</nombre>
             <bandera>..\img\banderas\España.png</bandera>
         </equipo>
         <equipo>
             <nombre>Costa Rica</nombre>
-            <bandera>..\img\banderas\Costa.png</bandera>
+            <bandera>..\img\banderas\Costa Rica.png</bandera>
         </equipo>
         <equipo>
             <nombre>Alemania</nombre>
             <bandera>..\img\banderas\Alemania.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Japon</nombre>
-            <bandera>..\img\banderas\Japon.png</bandera>
+            <nombre>Japón</nombre>
+            <bandera>..\img\banderas\Japón.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo F" href="GrupoF.html">
+    <grupo name="Grupo F">
         <equipo>
-            <nombre>Belgica</nombre>
-            <bandera>..\img\banderas\Belgica.png</bandera>
+            <nombre>Bélgica</nombre>
+            <bandera>..\img\banderas\Bélgica.png</bandera>
         </equipo>
         <equipo>
             <nombre>Canadá</nombre>
-            <bandera>..\img\banderas\Canada.png</bandera>
+            <bandera>..\img\banderas\Canadá.png</bandera>
         </equipo>
         <equipo>
             <nombre>Marruecos</nombre>
@@ -126,7 +126,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Croacia.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo G" href="GrupoG.html">
+    <grupo name="Grupo G">
         <equipo>
             <nombre>Brasil</nombre>
             <bandera>..\img\banderas\Brasil.png</bandera>
@@ -140,11 +140,11 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Suiza.png</bandera>
         </equipo>
         <equipo>
-            <nombre>Camerun</nombre>
-            <bandera>..\img\banderas\Camerun.png</bandera>
+            <nombre>Camerún</nombre>
+            <bandera>..\img\banderas\Camerún.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo H" href="GrupoH.html">
+    <grupo name="Grupo H">
         <equipo>
             <nombre>Portugal</nombre>
             <bandera>..\img\banderas\Portugal.png</bandera>
@@ -159,7 +159,7 @@ y sus imagenes localizadas en la carpeta img-->
         </equipo>
         <equipo>
             <nombre>Corea del Sur</nombre>
-            <bandera>..\img\banderas\Corea.png</bandera>
+            <bandera>..\img\banderas\Corea del Sur.png</bandera>
         </equipo>
     </grupo>
 </grupos>	
