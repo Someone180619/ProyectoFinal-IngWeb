@@ -31,4 +31,24 @@ switch ($_GET['action']) {
                 }
             }
         } 
+        break;
+
+    case 'infogrupo':
+        session_start();
+        $stmt = $user->read("tabpos");
+        $num = $stmt->num_rows;
+        
+        if($num > 0){
+            while ($row = $stmt->fetch_assoc()){
+                $data[] = $row;
+            }
+
+            $_SESSION['data'] = $data;
+            http_response_code(200);
+            header("location:../../../html/InfoGrupo.php");
+        } else {
+            echo "No se encontraron registros";
+            http_response_code(404);
+        }
+        break;
 }
