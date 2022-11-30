@@ -14,5 +14,14 @@ class api{
 
         return $stmt;
     }
+
+    public function read($table){
+        $query = "SELECT * FROM $table";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        return $result;
+    }
 }
 ?>

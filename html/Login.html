@@ -24,11 +24,13 @@
         <main class="contenido">
             <h6 id="head">Inicio de Sesión</h6><br>
             <div id="horizon-line"></div><br>
+            <form action="../scripts/api_bd/class/read.php?action=login" method="POST">
                 Usuario<br><input id="form" type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario"><br>
                 Contraseña<br><input id="form" type="text" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"><br>
                 <p id="form-p"><a href="#">¿Olvido la contraseña?</a></p><br>
-                <p id="form-p">¿Aun no tienes cuenta? <a href="#"> Registrate</a></p><br>
+                <p id="form-p">¿Aun no tienes cuenta? <a href="Registrarse.html"> Registrate</a></p><br>
                 <input id="button" type="submit" value="Iniciar Sesión">
+            </form>
         </main>
     </div>
 </body>
