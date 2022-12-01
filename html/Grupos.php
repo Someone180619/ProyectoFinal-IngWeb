@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +40,7 @@
                                         
                                             echo '<thead>';
                                                 echo '<tr>';
-                                                    echo '<th><a href="../scripts/api_bd/class/read.php?action=infogrupo" style="font-family: "Source Sans Pro", sans-serif;color: var(--bs-white);font-weight: bold;border-color: var(--bs-table-active-bg);">'. $grupo['name'] .'</a></th>';
+                                                    echo '<th><a href="../scripts/api/group/read_name.php?id="'. $grupo['id'] .'" style="font-family: "Source Sans Pro", sans-serif;color: var(--bs-white);font-weight: bold;border-color: var(--bs-table-active-bg);">'. $grupo['name'] .'</a></th>';
                                                 echo '</tr>';
                                             echo '</thead>';
                                             echo '<tbody>';
@@ -68,7 +72,7 @@
             </div>
         </div>
     </div>
-    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/JS/bootstrap.min.js"></script>
 </body>
 
 </html>

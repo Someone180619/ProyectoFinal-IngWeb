@@ -1,9 +1,8 @@
 <?php
-    session_start();
-    echo json_encode($_SESSION['data']);
-    //ya llegan los datos, solo queda de pasarlos a la tabla
-    //implementar sesion ya que no se puede pasar datos por url
-    
+session_start();
+
+$info = array();
+$info = $_SESSION['info'];
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +19,16 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md text-start py-3" style="background: var(--bs-black);">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img class="d-flex" width="100%" height="80" src="../img/Logo.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img class="d-flex"
+                    width="100%" height="80" src="../img/Logo.png"></a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-start" id="navcol-5">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="Grupos.html" style="font-family: 'Source Sans Pro', sans-serif;">TABLA DE POSICIONES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Clasificacion.html" style="font-family: 'Source Sans Pro', sans-serif;">TABLA DE CLASIFICACIÓN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Grupos.html"
+                            style="font-family: 'Source Sans Pro', sans-serif;">TABLA DE POSICIONES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Clasificacion.html"
+                            style="font-family: 'Source Sans Pro', sans-serif;">TABLA DE CLASIFICACIÓN</a></li>
                 </ul>
             </div>
         </div>
@@ -32,86 +36,78 @@
     <div style="height: 600px;background: url(&quot;../img/blob.png&quot;) center / cover no-repeat;">
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 row-cols-1 row-cols-md-2 d-xl-flex justify-content-xl-center">
-                <div class="col" style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;text-align: center;font-weight: bold;background: #500b24;border-radius: 20px;">
-                    <h1>GRUPO A</h1>
+                <div class="col"
+                    style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;text-align: center;font-weight: bold;background: #500b24;border-radius: 20px;">
+                    <?php
+
+                    echo '<h1>' . $_SESSION['name'] . '</h1>';
+                    ?>
                 </div>
                 <div class="col-xl-12" style="background: #500b24;border-radius: 10px;">
                     <div class="d-flex flex-column flex-lg-row">
-                        <div class="text-center d-xl-flex align-content-center justify-content-xl-start align-items-xl-center w-100">
+                        <div
+                            class="text-center d-xl-flex align-content-center justify-content-xl-start align-items-xl-center w-100">
                             <div class="table-responsive" style="width: 100%;">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">Bandera</th>
-                                            <th style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Nombre</th>
-                                            <th style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">P.J</th>
-                                            <th style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">P.G</th>
-                                            <th style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">P.E</th>
-                                            <th style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">P.P</th>
-                                            <th style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">G.F</th>
-                                            <th style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">G.C</th>
-                                            <th style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">DIF</th>
-                                            <th style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">Puntos</th>
+                                            <th
+                                                style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">
+                                                Bandera</th>
+                                            <th
+                                                style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                                Nombre</th>
+                                            <th
+                                                style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">
+                                                P.J</th>
+                                            <th
+                                                style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">
+                                                P.G</th>
+                                            <th
+                                                style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">
+                                                P.E</th>
+                                            <th
+                                                style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">
+                                                P.P</th>
+                                            <th
+                                                style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">
+                                                G.F</th>
+                                            <th
+                                                style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);">
+                                                G.C</th>
+                                            <th
+                                                style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">
+                                                DIF</th>
+                                            <th
+                                                style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;">
+                                                Puntos</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $grupos = simplexml_load_file('../xml/grupos.xml');
+                                        $grupos = simplexml_load_file('../xml/grupos.xml');
 
-                                            foreach($grupos->grupo as $grupo){
-                                                echo '<tr>';
-                                                    echo '<td><img src="../img/blob-1.png"></td>'; 
-                                                    echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;"></td>';
+                                        foreach ($info as $data) {
+                                            echo '<tr>';
+                                            foreach ($grupos->grupo->equipo as $equipo) {
+                                                if ($equipo->nombre == $data['equipos']) {
+                                                    echo '<td><img src="' . $equipo->bandera . '"></td>';
+                                                    echo $equipo->nombre;
+                                                }
                                             }
-                                            
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['equipos'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['pj'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['pg'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['pe'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['pp'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['ga'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['gc'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['DifGol'] . '</td>';
+                                            echo '<td class="text-center text-white" style="font-family: "Source Sans Pro", sans-serif;font-weight: bold;">' . $data['puntos'] . '</td>';
+
+                                            echo '</tr>';
+                                        }
                                         ?>
-                                            
-                                            
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="../img/blob-2.png"></td>
-                                            <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Ecuador</td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="font-family: 'Source Sans Pro', sans-serif;color: var(--bs-white);"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="../img/blob-3.png"></td>
-                                            <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;text-align: center;">Senegal</td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="../img/blob-4.png"></td>
-                                            <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Países Bajos</td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                            <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;"></td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -133,18 +129,33 @@
                             <tbody>
                                 <tr>
                                     <td><img src="../img/blob-1.png" width="50" height="34"></td>
-                                    <td class="text-center text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Ecuador</td>
+                                    <td class="text-center text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Ecuador</td>
                                     <td><img src="../img/blob-2.png"></td>
                                 </tr>
                                 <tr>
                                     <td><img src="../img/blob-3.png"></td>
-                                    <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Senegal</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Países Bajos</td>
+                                    <td class="text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Senegal
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Países Bajos</td>
                                     <td><img src="../img/blob-4.png"></td>
                                 </tr>
                             </tbody>
@@ -167,18 +178,33 @@
                             <tbody>
                                 <tr>
                                     <td><img src="../img/blob-1.png" width="50" height="34"></td>
-                                    <td class="text-center text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Senegal</td>
+                                    <td class="text-center text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Senegal</td>
                                     <td><img src="../img/blob-3.png"></td>
                                 </tr>
                                 <tr>
                                     <td><img src="../img/blob-4.png"></td>
-                                    <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Países Bajos</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Ecuador</td>
+                                    <td class="text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Países
+                                        Bajos</td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Ecuador</td>
                                     <td><img src="../img/blob-2.png"></td>
                                 </tr>
                             </tbody>
@@ -205,18 +231,33 @@
                             <tbody>
                                 <tr>
                                     <td><img src="../img/blob-1.png" width="50" height="34"></td>
-                                    <td class="text-center text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Países Bajos</td>
+                                    <td class="text-center text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Qatar</td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Países Bajos</td>
                                     <td><img src="../img/blob-4.png"></td>
                                 </tr>
                                 <tr>
                                     <td><img src="../img/blob-3.png"></td>
-                                    <td class="text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Senegal</td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;"></td>
-                                    <td style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Ecuador</td>
+                                    <td class="text-white"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">Senegal
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-style: italic;">
+                                    </td>
+                                    <td
+                                        style="color: var(--bs-white);font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">
+                                        Ecuador</td>
                                     <td><img src="../img/blob-2.png"></td>
                                 </tr>
                             </tbody>

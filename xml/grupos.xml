@@ -18,7 +18,7 @@ Grupo H: Portugal, Ghana, Uruguay, Corea del Sur
 y sus imagenes localizadas en la carpeta img-->
 
 <grupos>
-    <grupo name="Grupo A">
+    <grupo name="Grupo A" id="1">
         <equipo >
             <nombre>Catar</nombre>
             <bandera>..\img\banderas\Catar.png</bandera>
@@ -36,7 +36,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Paises Bajos.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo B">
+    <grupo name="Grupo B" id="2">
         <equipo>
             <nombre>Inglaterra</nombre>
             <bandera>..\img\banderas\Inglaterra.png</bandera>
@@ -54,7 +54,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Gales.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo C">
+    <grupo name="Grupo C" id="3">
         <equipo>
             <nombre>Argentina</nombre>
             <bandera>..\img\banderas\Argentina.png</bandera>
@@ -72,7 +72,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Polonia.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo D">
+    <grupo name="Grupo D" id="4">
         <equipo>
             <nombre>Francia</nombre>
             <bandera>..\img\banderas\Francia.png</bandera>
@@ -90,7 +90,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Túnez.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo E">
+    <grupo name="Grupo E" id="5">
         <equipo>
             <nombre>España</nombre>
             <bandera>..\img\banderas\España.png</bandera>
@@ -108,7 +108,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Japón.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo F">
+    <grupo name="Grupo F" id="6">
         <equipo>
             <nombre>Bélgica</nombre>
             <bandera>..\img\banderas\Bélgica.png</bandera>
@@ -126,7 +126,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Croacia.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo G">
+    <grupo name="Grupo G" id="7">
         <equipo>
             <nombre>Brasil</nombre>
             <bandera>..\img\banderas\Brasil.png</bandera>
@@ -144,7 +144,7 @@ y sus imagenes localizadas en la carpeta img-->
             <bandera>..\img\banderas\Camerún.png</bandera>
         </equipo>
     </grupo>
-    <grupo name="Grupo H">
+    <grupo name="Grupo H" id="8">
         <equipo>
             <nombre>Portugal</nombre>
             <bandera>..\img\banderas\Portugal.png</bandera>
