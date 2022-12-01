@@ -1,0 +1,165 @@
+<!--Nombre de los 32 equipos del mundial qatar 2022 por grupos
+Grupo A: Catar (anfitrión), Ecuador, Senegal, Países Bajos
+
+Grupo B: Inglaterra, Irán, Estados Unidos, Gales
+
+Grupo C: Argentina, Arabia Saudí, México, Polonia
+
+Grupo D: Francia, Australia, Dinamarca, Túnez
+
+Grupo E: España, Costa Rica, Alemania, Japón
+
+Grupo F: Bélgica, Canadá, Marruecos, Croacia
+
+Grupo G: Brasil, Serbia, Suiza, Camerún
+
+Grupo H: Portugal, Ghana, Uruguay, Corea del Sur
+
+y sus imagenes localizadas en la carpeta img-->
+
+<grupos>
+    <grupo name="Grupo A" id="1">
+        <equipo >
+            <nombre>Catar</nombre>
+            <bandera>..\img\banderas\Catar.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Ecuador</nombre>
+            <bandera>..\img\banderas\Ecuador.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Senegal</nombre>
+            <bandera>..\img\banderas\Senegal.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Paises Bajos</nombre>
+            <bandera>..\img\banderas\Paises Bajos.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo B" id="2">
+        <equipo>
+            <nombre>Inglaterra</nombre>
+            <bandera>..\img\banderas\Inglaterra.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Irán</nombre>
+            <bandera>..\img\banderas\Irán.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Estados Unidos</nombre>
+            <bandera>..\img\banderas\Estados Unidos.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Gales</nombre>
+            <bandera>..\img\banderas\Gales.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo C" id="3">
+        <equipo>
+            <nombre>Argentina</nombre>
+            <bandera>..\img\banderas\Argentina.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Arabia Saudita</nombre>
+            <bandera>..\img\banderas\Arabia Saudita.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>México</nombre>
+            <bandera>..\img\banderas\México.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Polonia</nombre>
+            <bandera>..\img\banderas\Polonia.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo D" id="4">
+        <equipo>
+            <nombre>Francia</nombre>
+            <bandera>..\img\banderas\Francia.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Australia</nombre>
+            <bandera>..\img\banderas\Australia.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Dinamarca</nombre>
+            <bandera>..\img\banderas\Dinamarca.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Túnez</nombre>
+            <bandera>..\img\banderas\Túnez.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo E" id="5">
+        <equipo>
+            <nombre>España</nombre>
+            <bandera>..\img\banderas\España.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Costa Rica</nombre>
+            <bandera>..\img\banderas\Costa Rica.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Alemania</nombre>
+            <bandera>..\img\banderas\Alemania.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Japón</nombre>
+            <bandera>..\img\banderas\Japón.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo F" id="6">
+        <equipo>
+            <nombre>Bélgica</nombre>
+            <bandera>..\img\banderas\Bélgica.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Canadá</nombre>
+            <bandera>..\img\banderas\Canadá.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Marruecos</nombre>
+            <bandera>..\img\banderas\Marruecos.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Croacia</nombre>
+            <bandera>..\img\banderas\Croacia.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo G" id="7">
+        <equipo>
+            <nombre>Brasil</nombre>
+            <bandera>..\img\banderas\Brasil.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Serbia</nombre>
+            <bandera>..\img\banderas\Serbia.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Suiza</nombre>
+            <bandera>..\img\banderas\Suiza.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Camerún</nombre>
+            <bandera>..\img\banderas\Camerún.png</bandera>
+        </equipo>
+    </grupo>
+    <grupo name="Grupo H" id="8">
+        <equipo>
+            <nombre>Portugal</nombre>
+            <bandera>..\img\banderas\Portugal.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Ghana</nombre>
+            <bandera>..\img\banderas\Ghana.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Uruguay</nombre>
+            <bandera>..\img\banderas\Uruguay.png</bandera>
+        </equipo>
+        <equipo>
+            <nombre>Corea del Sur</nombre>
+            <bandera>..\img\banderas\Corea del Sur.png</bandera>
+        </equipo>
+    </grupo>
+</grupos>	
