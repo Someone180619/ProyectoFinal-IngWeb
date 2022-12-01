@@ -1,6 +1,4 @@
 <?php
-ob_start();
-
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
@@ -27,7 +25,6 @@ if (
         echo json_encode(array("message" => "Usuario creado."));
 
         header("location: ../../../html/login.html");
-        ob_end_flush();
     } else {
         http_response_code(503);
         echo json_encode(array("message" => "No se puede crear el usuario."));
