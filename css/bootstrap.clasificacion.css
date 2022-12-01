@@ -6,6 +6,63 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+ .header{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85px;
+    padding: 5px 0;
+}
+
+.header .logo .img{
+    height: 10px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: gold;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: aqua;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: wheat;
+    color: aquamarine;
+    transform: scale(1.1);
+}
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
